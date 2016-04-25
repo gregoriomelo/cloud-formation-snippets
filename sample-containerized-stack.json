@@ -140,6 +140,13 @@
         "SecurityGroupIds" : [ { "Ref" : "SecurityGroup" } ],
         "Tags" : [ { "Key" : "Name", "Value" : "sample-containerized-stack" } ]
       }
+    },
+
+    "SampleRepository" : {
+      "Type" : "AWS::ECR::Repository",
+      "Properties" : {
+        "RepositoryName" : "samplerepository"
+      }
     }
   },
   "Outputs" : {
